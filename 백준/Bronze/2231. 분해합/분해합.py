@@ -3,7 +3,7 @@ input = sys.stdin.readline
 n = int(input())
 
 for i in range(n):
-    m = sum(list(map(int,list(str(i)))))
+    m = sum(list(map(int, str(i))))
     if n == i + m:
         print(i)
         break
