@@ -5,12 +5,10 @@ tree = [64]
 
 while sum(tree) > n:
     short = tree[-1]//2 
-    last = tree.pop()
+    tree.pop()
     if short + sum(tree) >= n: 
         tree.append(short)  
     else:
         tree.append(short)
         tree.append(short)
 print(len(tree))
-
-        
